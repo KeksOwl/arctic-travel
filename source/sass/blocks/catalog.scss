@@ -177,7 +177,6 @@
 
 .catalog__item a {
   margin: 0;
-  padding: 0;
 
   color: $color-tangaroa;
   background-color: $color-alice-blue;
@@ -197,8 +196,6 @@
   display: none;
 
   user-select: none; /* supported by Chrome and Opera */
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
 
   @media (max-width: $vp-tablet) {
     width: 96%;

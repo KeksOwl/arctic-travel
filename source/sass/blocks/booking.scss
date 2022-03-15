@@ -189,8 +189,6 @@
   line-height: 150%;
 
   user-select: none; /* supported by Chrome and Opera */
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
 
   @media (max-width: $vp-mobile) {
     margin-bottom: 15px;
@@ -332,7 +330,6 @@
 }
 
 .booking__item-wrapper label {
-  position: unset;
   width: unset;
   height: unset;
   margin: unset;

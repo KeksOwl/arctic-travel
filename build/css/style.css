@@ -452,7 +452,7 @@ img {
   min-height: 100%;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: normal;
-  color: #011C40;
+  color: #011c40;
   background-color: #ffffff;
   text-align: center;
   display: -ms-grid;
@@ -502,7 +502,7 @@ img {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: -100;
-  background-color: #3299FA;
+  background-color: #3299fa;
   background-image: url("../img/cruise/cruise-wrapper-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -555,7 +555,7 @@ img {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: -100;
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .main-nav button {
@@ -593,7 +593,7 @@ img {
 }
 
 .site-list__item a {
-  color: #F9FBFD;
+  color: #f9fbfd;
   font-weight: 500;
   font-size: 16px;
 }
@@ -615,7 +615,7 @@ img {
   -ms-flex-align: start;
   align-items: flex-start;
   gap: 15px;
-  color: #F9FBFD;
+  color: #f9fbfd;
   text-align: left;
   padding: 195px 95px;
 }
@@ -720,7 +720,7 @@ img {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: -100;
-  background-color: #E3ECF6;
+  background-color: #e3ecf6;
   background-image: url("../img/features/features-bg-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -753,7 +753,7 @@ img {
 }
 
 .features__item {
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -919,7 +919,7 @@ img {
   left: 0;
   top: 0;
   z-index: 1;
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .catalog__item:hover .catalog__item-details-list,
@@ -957,7 +957,7 @@ img {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  color: #F9FBFD;
+  color: #f9fbfd;
   z-index: 2;
   margin-top: auto;
 }
@@ -966,7 +966,7 @@ img {
   -o-object-fit: cover;
   object-fit: cover;
   display: block;
-  background-color: #3299FA;
+  background-color: #3299fa;
   position: absolute;
   top: 0;
   left: 0;
@@ -976,9 +976,8 @@ img {
 
 .catalog__item a {
   margin: 0;
-  padding: 0;
-  color: #011C40;
-  background-color: #F9FBFD;
+  color: #011c40;
+  background-color: #f9fbfd;
   width: 100%;
   font-weight: 600;
   font-size: 14px;
@@ -989,13 +988,11 @@ img {
   box-sizing: border-box;
   z-index: 2;
   display: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   /* supported by Chrome and Opera */
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
 }
 
 .catalog__item a:hover,
@@ -1028,7 +1025,7 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .catalog__item-details-item p {
@@ -1036,7 +1033,7 @@ img {
   padding: 0;
   font-size: 14px;
   line-height: 140%;
-  color: #D8D8D9;
+  color: #d8d8d9;
 }
 
 .booking {
@@ -1071,7 +1068,7 @@ img {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #3299FA;
+  background-color: #3299fa;
   background-image: url("../img/booking/booking-wrapper-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1110,8 +1107,8 @@ img {
 }
 
 .booking__form {
-  background-color: #011C40;
-  color: #F9FBFD;
+  background-color: #011c40;
+  color: #f9fbfd;
   text-align: left;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1142,8 +1139,8 @@ img {
 
 .booking__form button {
   margin: 0;
-  background-color: #F9FBFD;
-  color: #011C40;
+  background-color: #f9fbfd;
+  color: #011c40;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 5px;
@@ -1153,17 +1150,15 @@ img {
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   /* supported by Chrome and Opera */
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
 }
 
 .booking__form button:focus {
-  outline: 2px solid #3299FA;
+  outline: 2px solid #3299fa;
 }
 
 .booking__form button:hover,
@@ -1209,11 +1204,11 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 16px 15px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 .booking__form input:focus {
-  outline: 2px solid #3299FA;
+  outline: 2px solid #3299fa;
 }
 
 .booking__form input[type="checkbox"] {
@@ -1230,15 +1225,15 @@ img {
   height: 18px;
   left: -23px;
   top: -2.5px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 .booking__form input[type="checkbox"]:focus + label::before {
-  outline: 2px solid #3299FA;
+  outline: 2px solid #3299fa;
 }
 
 .booking__form input[type="checkbox"]:invalid + label::before {
-  outline: 2px solid #CC0000;
+  outline: 2px solid #cc0000;
 }
 
 .booking__form input[type="checkbox"]:checked + label::after {
@@ -1267,7 +1262,6 @@ img {
 }
 
 .booking__item-wrapper label {
-  position: unset;
   width: unset;
   height: unset;
   margin: unset;
@@ -1376,7 +1370,7 @@ img {
 .contacts__inner a {
   font-weight: 400;
   font-size: 16px;
-  color: #011C40;
+  color: #011c40;
   position: relative;
 }
 
@@ -1730,7 +1724,7 @@ img {
     top: 0;
     right: -15px;
     z-index: -1;
-    background-color: #F9FBFD;
+    background-color: #f9fbfd;
   }
 
   .page-header__wrapper-logo {
@@ -1802,7 +1796,7 @@ img {
     height: 19.5px;
     right: 50%;
     top: 0;
-    background-color: #011C40;
+    background-color: #011c40;
   }
 
   .main-nav button::before {
@@ -1842,9 +1836,9 @@ img {
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
     transform: rotate(0);
-    background-color: #F9FBFD;
-    -webkit-box-shadow: 0 6px 0 0 #F9FBFD, 0 -6px 0 0 #F9FBFD;
-    box-shadow: 0 6px 0 0 #F9FBFD, 0 -6px 0 0 #F9FBFD;
+    background-color: #f9fbfd;
+    -webkit-box-shadow: 0 6px 0 0 #f9fbfd, 0 -6px 0 0 #f9fbfd;
+    box-shadow: 0 6px 0 0 #f9fbfd, 0 -6px 0 0 #f9fbfd;
   }
 
   .main-nav button[data-toggler="is-closed"]::after {
@@ -1896,13 +1890,13 @@ img {
 
   .site-list__item a {
     font-size: 18px;
-    color: #011C40;
+    color: #011c40;
     word-break: break-all;
   }
 
   .site-list__item--footer a {
     font-size: 12px;
-    color: #F9FBFD;
+    color: #f9fbfd;
   }
 
   .banner {
