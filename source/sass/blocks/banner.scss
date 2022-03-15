@@ -1,0 +1,60 @@
+.banner {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  gap: 15px;
+
+  color: $color-alice-blue;
+  text-align: left;
+
+  padding: 195px 95px;
+
+  @media (max-width: $vp-tablet) {
+    padding: 210px 0;
+    padding-top: 215px;
+
+    gap: 15px
+  }
+
+  @media (max-width: $vp-mobile) {
+    padding: 143px 0;
+    padding-top: 111px;
+
+    gap: 12px;
+  }
+}
+
+.banner h2 {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 54px;
+
+  @media (max-width: $vp-tablet) {
+    font-size: 50px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    font-size: 36px;
+    line-height: 125%;
+  }
+}
+
+.banner p {
+  margin: 0;
+  padding: 0;
+
+  font-size: 20px;
+
+  @media (max-width: $vp-tablet) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    font-size: 16px;
+    line-height: 140%;
+
+    margin-right: 70px;
+  }
+}

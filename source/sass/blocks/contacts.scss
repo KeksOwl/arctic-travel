@@ -1,0 +1,178 @@
+.contacts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  padding: 120px 0;
+
+  gap: 100px;
+
+  @media (max-width: $vp-tablet) {
+    padding: 100px 0;
+    padding-bottom: 96px;
+
+    gap: 30px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    padding: 65px 0;
+    padding-top: 58px;
+
+    flex-direction: column;
+
+    min-height: 703px;
+  }
+}
+
+.contacts__map-wrapper {
+  position: relative;
+
+  @media (max-width: $vp-mobile) {
+    order: 2;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    width: 36px;
+    height: 36px;
+
+    left: 47%;
+    top: 38%;
+    z-index: 1;
+
+    background-image: url("../img/contacts/pin-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 36px 36px;
+
+    @media (max-width: $vp-tablet) {
+      left: 44%;
+
+      width: 40px;
+      height: 40px;
+
+      background-size: 40px 40px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      width: 38px;
+      height: 38px;
+
+      background-size: 38px 38px;
+    }
+  }
+}
+
+.contacts__map-wrapper iframe {
+  border: none;
+
+  width: 560px;
+  height: 306px;
+
+  @media (max-width: $vp-tablet) {
+    width: 324px;
+    height: 335px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    width: 100%;
+    height: 316px;
+  }
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  text-align: left;
+
+  width: 500px;
+
+  padding: 80px 0;
+  padding-top: 75px;
+  padding-bottom: 83px;
+
+  @media (max-width: $vp-tablet) {
+    width: 324px;
+
+    padding: 72px 0;
+    padding-top: 65px;
+    padding-bottom: 75px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    width: 100%;
+
+    order: 1;
+
+    padding: 0;
+    gap: 26px;
+  }
+}
+
+.contacts__wrapper p {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.contacts__inner {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 24px;
+  padding-left: 28px;
+}
+
+.contacts__inner p,
+.contacts__inner a {
+  font-weight: 400;
+  font-size: 16px;
+
+  color: $color-tangaroa;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    width: 18px;
+    height: 22px;
+
+    left: -28px;
+    top: 0;
+
+    background-repeat: no-repeat;
+  }
+}
+
+.contacts__inner p {
+  &::before {
+    background-image: url("../img/contacts/pin-icon.svg");
+
+    @media (max-width: $vp-tablet) {
+      top: 5px;
+    }
+  }
+}
+
+.contacts__inner a {
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+
+  &::before {
+    background-image: url("../img/contacts/tel-icon.svg");
+  }
+}

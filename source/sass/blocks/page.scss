@@ -1,0 +1,45 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  max-width: 1366px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 103px;
+  min-height: 100%;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: normal;
+
+  color: $color-tangaroa;
+  background-color: $color-default-white;
+  text-align: center;
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+
+
+  @media (max-width: $vp-tablet) {
+    padding: 0 45px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    padding: 0 15px;
+  }
+}
+
+.page__body[data-modal="is-open"] {
+  height: 100vh;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    left: 0;
+    background-color: $color-prussian-blue-opacity;
+    z-index: 1;
+  }
+}

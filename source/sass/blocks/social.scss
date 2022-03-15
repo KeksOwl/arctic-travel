@@ -1,0 +1,54 @@
+.social {
+  min-width: 117px;
+
+  @media (max-width: $vp-tablet) {
+    min-width: 87px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    min-width: none;
+    margin-top: 5px;
+  }
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 33px;
+
+  @media (max-width: $vp-tablet) {
+    gap: 23px;
+  }
+}
+
+.social__link {
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+
+  &--first svg {
+    @media (max-width: $vp-tablet) {
+      width: 9px;
+      height: 16px;
+    }
+  }
+
+  &--second svg {
+    @media (max-width: $vp-tablet) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &--third svg {
+    @media (max-width: $vp-tablet) {
+      width: 16px;
+      height: 13px;
+    }
+  }
+}

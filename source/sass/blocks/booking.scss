@@ -1,0 +1,360 @@
+.booking {
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+  padding: 40px 60px;
+
+  position: relative;
+
+  min-height: 555px;
+
+  @media (max-width: $vp-tablet) {
+    flex-flow: column wrap;
+    padding: 100px 125px;
+    padding-top: 88px;
+    min-height: 805px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    padding: 65px 0;
+    padding-top: 60px;
+    min-height: 760px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    width: 100vw;
+    height: 100%;
+
+    left: 50%;
+    top: 0;
+    z-index: -1;
+    transform: translateX(-50%);
+
+    background-color: $color-dodger-blue;
+    background-image: url("../img/booking/booking-wrapper-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $vp-desktop-only) and (min-resolution: $retina-dppx) {
+      background-image: url("../img/booking/booking-wrapper-desktop@2x.png");
+    }
+
+    @media (max-width: $vp-tablet) {
+      background-image: url("../img/booking/booking-wrapper-tablet.png");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/booking/booking-wrapper-tablet@2x.png");
+      }
+    }
+
+    @media (max-width: $vp-mobile) {
+      background-image: url("../img/booking/booking-wrapper-mobile.png");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/booking/booking-wrapper-mobile@2x.png");
+      }
+    }
+  }
+}
+
+.booking__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+
+  gap: 8px;
+  margin-bottom: 6px;
+
+  text-align: left;
+
+  @media (max-width: $vp-tablet) {
+    align-items: center;
+    text-align: center;
+
+    gap: 5px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    padding: 0 16px;
+    gap: 12px;
+  }
+}
+
+.booking__wrapper h2 {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+
+  @media (max-width: $vp-tablet) {
+    font-size: 34px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    font-size: 24px;
+    line-height: 130%;
+  }
+}
+
+.booking__wrapper p {
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 150%;
+
+  margin-right: 250px;
+
+  @media (max-width: $vp-tablet) {
+    margin: 0 20px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0;
+  }
+}
+
+.booking__form {
+  background-color: $color-tangaroa;
+  color: $color-alice-blue;
+
+  text-align: left;
+
+  box-sizing: border-box;
+  padding: 40px 50px;
+  padding-top: 45px;
+  min-height: 455px;
+  min-width: 403px;
+  max-width: 403px;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+
+  @media (max-width: $vp-mobile) {
+    min-height: 460px;
+    padding: 23px 30px;
+    padding-top: 35px;
+
+    width: 100%;
+    max-width: unset;
+    min-width: unset;
+
+    text-align: center;
+
+    margin-top: 15px;
+  }
+}
+
+.booking__form p {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+
+  @media (max-width: $vp-mobile) {
+    line-height: 140%;
+  }
+}
+
+.booking__form button {
+  margin: 0;
+
+  background-color: $color-alice-blue;
+  color: $color-tangaroa;
+
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 10px;
+
+
+  width: 100%;
+  min-height: 43px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+
+  @media (max-width: $vp-mobile) {
+    margin-bottom: 15px;
+  }
+
+  &:focus {
+    outline: 2px solid $color-dodger-blue;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.booking__form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  margin-bottom: 7px;
+
+  @media (max-width: $vp-mobile) {
+    margin-bottom: 0;
+  }
+}
+
+.booking__form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.booking__form li {
+  position: relative;
+
+  @media (max-width: $vp-mobile) {
+    text-align: left;
+  }
+}
+
+.booking__form input {
+  font-size: 14px;
+  line-height: 150%;
+
+  width: 100%;
+  height: 43px;
+
+  margin: 0;
+  border: none;
+
+  box-sizing: border-box;
+  padding: 16px 15px;
+
+  background-color: $color-alice-blue;
+
+  &:focus {
+    outline: 2px solid $color-dodger-blue;
+  }
+
+  &[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    height: 0;
+
+    & + label::before {
+      position: absolute;
+      content: "";
+
+      width: 18px;
+      height: 18px;
+
+      left: -23px;
+      top: -2.5px;
+
+      background-color: $color-alice-blue;
+
+      @media (max-width: $vp-mobile) {
+        width: 20px;
+        height: 20px;
+
+        left: -28px;
+        top: 1px;
+      }
+    }
+
+    &:focus + label::before {
+      outline: 2px solid $color-dodger-blue;
+    }
+
+    &:invalid + label::before {
+      outline: 2px solid $color-free-speech-red;
+    }
+
+    &:checked + label::after {
+      position: absolute;
+      content: "";
+
+      width: 18px;
+      height: 18px;
+
+      left: -20px;
+      top: 2.5px;
+
+      background-image: url("../img/booking/checkbox-icon.svg");
+      background-repeat: no-repeat;
+
+      @media (max-width: $vp-mobile) {
+        width: 20px;
+        height: 20px;
+
+        left: -24px;
+        top: 7px;
+      }
+    }
+  }
+}
+
+.booking__form label {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.booking__item-wrapper label {
+  position: unset;
+  width: unset;
+  height: unset;
+  margin: unset;
+  border: unset;
+  padding: unset;
+  white-space: unset;
+  clip-path: unset;
+  clip: unset;
+  overflow: unset;
+
+  font-size: 10px;
+  line-height: 13px;
+
+  position: relative;
+
+  margin-left: 23px;
+
+  display: block;
+
+  @media (max-width: $vp-mobile) {
+    line-height: 12px;
+
+    margin-left: 28px;
+  }
+}
