@@ -135,7 +135,6 @@
   padding: 40px 50px;
   padding-top: 45px;
   min-height: 455px;
-  min-width: 403px;
   max-width: 403px;
 
   display: flex;
@@ -149,7 +148,6 @@
 
     width: 100%;
     max-width: unset;
-    min-width: unset;
 
     text-align: center;
 
@@ -224,11 +222,16 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  gap: 20px;
 }
 
 .booking__form li {
   position: relative;
+
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (max-width: $vp-mobile) {
     text-align: left;
@@ -348,6 +351,8 @@
   margin-left: 23px;
 
   display: block;
+
+  cursor: pointer;
 
   @media (max-width: $vp-mobile) {
     line-height: 12px;

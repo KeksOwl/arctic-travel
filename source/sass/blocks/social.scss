@@ -18,10 +18,23 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  gap: 33px;
+}
+
+.social__item {
+  margin-right: 33px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   @media (max-width: $vp-tablet) {
-    gap: 23px;
+    margin-right: 23px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    margin-top: 0;
   }
 }
 

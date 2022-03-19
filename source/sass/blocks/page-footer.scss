@@ -8,6 +8,9 @@
   min-height: 138px;
   align-items: center;
 
+  box-sizing: border-box;
+  padding: 10px 0;
+
   @media (max-width: $vp-mobile) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, max-content);

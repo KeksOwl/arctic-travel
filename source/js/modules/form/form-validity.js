@@ -3,7 +3,6 @@ const formNameInput = formBooking.querySelector('[data-form-name'); // Инпу�
 const formTelInput = formBooking.querySelector('[data-form-tel]'); // Инпут телефона
 const formEmailInput = formBooking.querySelector('[data-form-email]'); // Инпут почты
 
-const namePattern = /^([A-Za-zА-Яа-яЁё\s]+)$/; // Паттерн имени пользователя
 const telPattern = /^([-+()0-9\s]+)$/; // Паттерн телефона
 // Паттерн почты
 const emailPattern = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
@@ -17,9 +16,6 @@ const initFormValidate = () => {
     // Проверяем длину имени и паттерн
     if (nameValue.length < 1) {
       formNameInput.setCustomValidity('Имя должно состоять минимум из 1 символа');
-      formNameInput.style.outline = '2px solid #CC0000';
-    } else if (!namePattern.test(nameValue)) {
-      formNameInput.setCustomValidity('Введите имя без цифр, знаков и спецсимволов');
       formNameInput.style.outline = '2px solid #CC0000';
     } else {
       formNameInput.setCustomValidity('');
