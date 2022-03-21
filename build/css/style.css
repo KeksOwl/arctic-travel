@@ -450,6 +450,7 @@ img {
   box-sizing: border-box;
   padding: 0 103px;
   min-height: 100%;
+  overflow-x: hidden;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: normal;
   color: #011c40;
@@ -912,21 +913,20 @@ img {
   justify-content: space-between;
   text-align: left;
   position: relative;
-  max-width: 260px;
-  max-height: 386px;
-  overflow-y: auto;
+  width: 260px;
+  height: 386px;
   background-color: #011c40;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 25px;
   padding-bottom: 22px;
   padding-left: 30px;
-  padding-top: 129.62%;
 }
 
 .catalog__item:hover,
 .catalog__item:active,
 .catalog__item:focus-within {
+  overflow-y: auto;
   padding-left: 25px;
   padding-bottom: 34px;
   padding-top: 28px;
@@ -2239,23 +2239,9 @@ img {
 }
 
 @media (max-width: 1365px) and (min-width: 1024px) {
-  .catalog__item {
-    max-height: 26.84vw;
-  }
-
-  .catalog__item h4 {
-    font-size: 1.1vw;
-  }
-
-  .catalog__item a {
-    font-size: 1.1vw;
-  }
-
-  .catalog__item-details-item h5 {
-    font-size: 1.1vw;
-  }
-
-  .catalog__item-details-item p {
-    font-size: 1.1vw;
+  .catalog__list {
+    width: auto;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
   }
 }

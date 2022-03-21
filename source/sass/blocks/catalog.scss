@@ -54,6 +54,11 @@
   column-gap: 30px;
   row-gap: 30px;
 
+  @media (max-width: $vp-1365) and (min-width: $vp-desktop-only) {
+    width: auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   @media (max-width: $vp-tablet) {
     width: auto;
 
@@ -80,9 +85,8 @@
 
   position: relative;
 
-  max-width: 260px;
-  max-height: 386px;
-  overflow-y: auto;
+  width: 260px;
+  height: 386px;
 
   background-color: $color-tangaroa;
 
@@ -90,12 +94,6 @@
   padding: 25px;
   padding-bottom: 22px;
   padding-left: 30px;
-
-  padding-top: 129.62%;
-
-  @media (max-width: $vp-1365) and (min-width: $vp-desktop-only) {
-    max-height: 26.84vw;
-  }
 
   @media (max-width: $vp-tablet) {
     max-width: unset;
@@ -117,6 +115,7 @@
   &:hover,
   &:active,
   &:focus-within {
+    overflow-y: auto;
     padding-left: 25px;
     padding-bottom: 34px;
     padding-top: 28px;
@@ -166,10 +165,6 @@
   z-index: 2;
 
   margin-top: auto;
-
-  @media (max-width: $vp-1365) and (min-width: $vp-desktop-only) {
-    font-size: 1.1vw;
-  }
 }
 
 .catalog__item img {
@@ -206,10 +201,6 @@
   display: none;
 
   user-select: none; /* supported by Chrome and Opera */
-
-  @media (max-width: $vp-1365) and (min-width: $vp-desktop-only) {
-    font-size: 1.1vw;
-  }
 
   @media (max-width: $vp-tablet) {
     width: 96%;
@@ -254,10 +245,6 @@
   line-height: 140%;
 
   color: $color-alice-blue;
-
-  @media (max-width: $vp-1365) and (min-width: $vp-desktop-only) {
-    font-size: 1.1vw;
-  }
 }
 
 .catalog__item-details-item p {
@@ -268,8 +255,4 @@
   line-height: 140%;
 
   color: $color-quartz;
-
-  @media (max-width: $vp-1365) and (min-width: $vp-desktop-only) {
-    font-size: 1.1vw;
-  }
 }
