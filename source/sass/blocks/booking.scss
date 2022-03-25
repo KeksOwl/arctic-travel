@@ -253,6 +253,8 @@
 
   background-color: $color-alice-blue;
 
+  border-radius: 0;
+
   &:focus {
     outline: 2px solid $color-dodger-blue;
   }

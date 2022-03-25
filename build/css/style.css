@@ -1226,6 +1226,7 @@ img {
   box-sizing: border-box;
   padding: 16px 15px;
   background-color: #f9fbfd;
+  border-radius: 0;
 }
 
 .booking__form input:focus {
